@@ -4,7 +4,7 @@
 class Clone < Formula
   desc "Clone GitHub repositories in parallel"
   homepage "https://github.com/gechr/clone"
-  version "0.1.6"
+  version "0.1.7"
   license "MIT"
 
   head do
@@ -15,22 +15,22 @@ class Clone < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/gechr/clone/releases/download/v#{version}/clone_darwin_amd64.tar.gz"
-      sha256 "e65ad3cbc13b6b74f73ee902270b47f88a80fe7e17e82159be75c144d4b48e42"
+      sha256 "5620d96d4c18cf6ef58e0e6b0823c8dce0c29343f8682439db1600f5c61baece"
     end
     if Hardware::CPU.arm?
       url "https://github.com/gechr/clone/releases/download/v#{version}/clone_darwin_arm64.tar.gz"
-      sha256 "6c32715618b00285d5d31e921b1aaf5b17d7bfbe75024335de79dd328c0ac754"
+      sha256 "6c915f9956e029cb88e4f079a04fcf5537d93858e5737408072b1992795210f8"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/gechr/clone/releases/download/v#{version}/clone_linux_amd64.tar.gz"
-      sha256 "af5210881eb1cb9129af74bc155e8078ee98420ed5bae3de5b2bbeb377f720b9"
+      sha256 "acebb9a94791af4ad6ce006fcb1ff743e04627eb8d25fe26e55abfcfe39933aa"
     end
     if Hardware::CPU.arm?
       url "https://github.com/gechr/clone/releases/download/v#{version}/clone_linux_arm64.tar.gz"
-      sha256 "07d59509555a3edc5329749b2d9e6841c47b4d4bdf60ea809decedf1ed507c64"
+      sha256 "acc3bf9f6222570adad04efef7303d15d831b8a32c1ea5e6787f35b329032834"
     end
   end
 
