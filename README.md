@@ -6,3 +6,4 @@
 
 - [clone](https://github.com/gechr/clone) - Clone GitHub repositories in parallel
 - [prl](https://github.com/gechr/prl) - Interact with GitHub pull requests
+- [rep](https://github.com/gechr/rep) - Fast find/replace tool
