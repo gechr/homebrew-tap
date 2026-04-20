@@ -1,7 +1,7 @@
 # typed: strict
 # frozen_string_literal: true
 
-class Echo-server < Formula
+class EchoServer < Formula
   desc "HTTP echo server that returns request details as JSON"
   homepage "https://github.com/gechr/echo-server"
   version "0.1.0"
