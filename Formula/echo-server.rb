@@ -4,7 +4,7 @@
 class EchoServer < Formula
   desc "HTTP echo server that returns request details as JSON"
   homepage "https://github.com/gechr/echo-server"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   head do
@@ -15,22 +15,22 @@ class EchoServer < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/gechr/echo-server/releases/download/v#{version}/echo-server_darwin_amd64.tar.gz"
-      sha256 "78a3245112cc4465e3a641fdc6d07fa51f4d8b1d98a960a7ee60a06290fa83ab"
+      sha256 "15883355621af928612950818ee37dd75b795753fc40fe4fcd8e6f4e6db7fb03"
     end
     if Hardware::CPU.arm?
       url "https://github.com/gechr/echo-server/releases/download/v#{version}/echo-server_darwin_arm64.tar.gz"
-      sha256 "5a358b840428942933eb6e2e9d49160c31c40719b7584a56e2feb9554f8e6fed"
+      sha256 "e3de26527200d2203a04e30fc0b89bfee254164408ca296018224b28b6bfb6f3"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/gechr/echo-server/releases/download/v#{version}/echo-server_linux_amd64.tar.gz"
-      sha256 "5f7f1c81171737446dd4f65b4c20d01bcce77c06ac53260a2d88f643c4427a0e"
+      sha256 "98ec5447e3ec4d87cf5159f85839f42e101b7d45a43f9ea07d547d6be9b48fc0"
     end
     if Hardware::CPU.arm?
       url "https://github.com/gechr/echo-server/releases/download/v#{version}/echo-server_linux_arm64.tar.gz"
-      sha256 "b2122d962cd6458e99f772b5d987925f99e99acaac97952136ce3cf6dca8a79e"
+      sha256 "7c941fc83886513717b07602b9c300375cc5f6bbe8632def71397fdca5efecc7"
     end
   end
 
@@ -40,11 +40,11 @@ class EchoServer < Formula
       fetch_args << "--unshallow" if File.exist?(".git/shallow")
       system "git", *fetch_args
       system "make", "build"
-      bin.install "dist/echo-server"
+      bin.install "dist/echo-server" => "echo-server"
     else
       bin.install "echo-server"
     end
-    generate_completions_from_executable(bin/"echo-server", "--print-completion", shell_parameter_format: "--@shell=")
+
   end
 
   test do
