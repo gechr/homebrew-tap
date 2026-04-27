@@ -4,7 +4,7 @@
 class Ren < Formula
   desc "Batch file renamer"
   homepage "https://github.com/gechr/ren"
-  version "0.0.4"
+  version "0.0.5"
   license "MIT"
 
   head do
@@ -15,22 +15,22 @@ class Ren < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/gechr/ren/releases/download/v#{version}/ren_darwin_amd64.tar.gz"
-      sha256 "9088248a7593a5721a090a0e0233cc430bd732469b608a8519ff0ac7cc745cfd"
+      sha256 "1ba3c855407a1ee01c326d64d3d4d94e1ba553bef0018e1d81cddc4534f7aa77"
     end
     if Hardware::CPU.arm?
       url "https://github.com/gechr/ren/releases/download/v#{version}/ren_darwin_arm64.tar.gz"
-      sha256 "7d0340b7e2e03d4785b2b24b236b59e93e859474d98bee979fd03a37d5662ba4"
+      sha256 "02a5d9e407242abb67d0763d94a84c143d0231229b44c88db0e6227756c27e41"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/gechr/ren/releases/download/v#{version}/ren_linux_amd64.tar.gz"
-      sha256 "992a7e1b5fe321c07c0126b8f4404aadc3fc1b098857c8c263ee56283da47425"
+      sha256 "c2e84b44c917b64311ad8fb688181eb364bd18a00935e277fb9c048ab9ceb812"
     end
     if Hardware::CPU.arm?
       url "https://github.com/gechr/ren/releases/download/v#{version}/ren_linux_arm64.tar.gz"
-      sha256 "ae731c0077c1cb035b42c8563eaa517f5ed8c6ee6628ea94c7d44d2f320b267e"
+      sha256 "7136ffcc746f91a781d0bbbe311c4012a69974064f1e0a14ff6ef9d80910deda"
     end
   end
 
