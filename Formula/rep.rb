@@ -4,7 +4,7 @@
 class Rep < Formula
   desc "Fast find-and-replace tool"
   homepage "https://github.com/gechr/rep"
-  version "0.3.6"
+  version "0.3.7"
   license "MIT"
 
   head do
@@ -15,22 +15,22 @@ class Rep < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/gechr/rep/releases/download/v#{version}/rep_darwin_amd64.tar.gz"
-      sha256 "8d8e28478c5072ca7d53211f1e6894441b5d06fed23a246a69daecbc079efe73"
+      sha256 "08a3524c47f7f9c949ac2a6e735451542d103ccc84ac3c3989d08293ad56a261"
     end
     if Hardware::CPU.arm?
       url "https://github.com/gechr/rep/releases/download/v#{version}/rep_darwin_arm64.tar.gz"
-      sha256 "f255187c8602bf8a185f2d8d05c4b4f70dde2b5da6fdfcaf5a87eef3b27f00ad"
+      sha256 "b72a97914da53bc5778c61c176cb9588671f2aaaa90db836c0eb47cb4d41dd63"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/gechr/rep/releases/download/v#{version}/rep_linux_amd64.tar.gz"
-      sha256 "236f32a57edb08631bc88f2b3c9ed8b9f037b24f33a2e5655e202f52a94a90e5"
+      sha256 "316c62690bdeccba252e94ef1945363cb93d23f4a8d3e91a20920ae917de2cd2"
     end
     if Hardware::CPU.arm?
       url "https://github.com/gechr/rep/releases/download/v#{version}/rep_linux_arm64.tar.gz"
-      sha256 "8bef6d19529f388fa06c13dccca640b416e8883b657ce0686274a4eee3c7e87a"
+      sha256 "13b616f1c26640e138bfd815d936240a6560c92c4c3065e056c34b9703927350"
     end
   end
 
