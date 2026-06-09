@@ -7,7 +7,7 @@ cask "whichspace" do
   desc "Menu bar utility for viewing and switching macOS Spaces"
   homepage "https://github.com/gechr/WhichSpace"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "WhichSpace.app"
 
