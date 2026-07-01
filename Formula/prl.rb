@@ -4,7 +4,7 @@
 class Prl < Formula
   desc "Interact with GitHub pull requests"
   homepage "https://github.com/gechr/prl"
-  version "0.4.5"
+  version "0.4.6"
   license "MIT"
 
   head do
@@ -15,22 +15,22 @@ class Prl < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/gechr/prl/releases/download/v#{version}/prl_darwin_amd64.tar.gz"
-      sha256 "c9b90310d6dab15d1164a978f5d03f11eef767e3ae8a583420cd899ecfd582cc"
+      sha256 "a5e5a37a8f1319130ec9ec21642f954a92c684440a5fe0b2883cffaad3474562"
     end
     if Hardware::CPU.arm?
       url "https://github.com/gechr/prl/releases/download/v#{version}/prl_darwin_arm64.tar.gz"
-      sha256 "73b0099a2fbfe25f1657311cea07c90b507354478166070d7876e0e54b09531f"
+      sha256 "9f7fdebbbff555dc46e8f7fd96986a4ff86adc41c3d294f882f717521ce79752"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/gechr/prl/releases/download/v#{version}/prl_linux_amd64.tar.gz"
-      sha256 "db69054e43ebd62cfda8517492064f08e631906849fe02d17ba8a95a0b69c66a"
+      sha256 "c6f352c7ce0460ed4dd7cfb25a853e4373b76f3d596bfc81b6eefbae49f8128c"
     end
     if Hardware::CPU.arm?
       url "https://github.com/gechr/prl/releases/download/v#{version}/prl_linux_arm64.tar.gz"
-      sha256 "0726a18186eb05f2396b61d5c6e47919a051d3e0add6799f91c51a1d3ec17a32"
+      sha256 "2d9d491ca7dad36520c55a1b940361789af3d77c34c19abdff26989cea676703"
     end
   end
 
