@@ -4,16 +4,12 @@ cask "whichspace" do
 
   url "https://github.com/gechr/WhichSpace/releases/download/v#{version}/WhichSpace.zip"
   name "WhichSpace"
-  desc "Menu bar utility for viewing and switching macOS Spaces"
+  desc "Menu bar utility for viewing and switching Spaces"
   homepage "https://github.com/gechr/WhichSpace"
 
   depends_on macos: :sonoma
 
   app "WhichSpace.app"
-
-  postflight do
-    system "xattr", "-r", "-d", "com.apple.quarantine", "#{appdir}/WhichSpace.app"
-  end
 
   uninstall quit: "io.gechr.WhichSpace"
 
