@@ -4,7 +4,7 @@
 class Clover < Formula
   desc "Automatically manage version strings across arbitrary files"
   homepage "https://github.com/gechr/clover"
-  version "0.1.11"
+  version "0.1.12"
   license "MIT"
 
   head do
@@ -15,22 +15,22 @@ class Clover < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/gechr/clover/releases/download/v#{version}/clover_darwin_amd64.tar.gz"
-      sha256 "8f99bc0a8cdd363b2603939a31e8df32b932f7ece65c9b59d6ebb2533636a414"
+      sha256 "0b6ad18743fffbf1e3bf073fed10ef523614b08c44fcc695ec3e37b6af0e4191"
     end
     if Hardware::CPU.arm?
       url "https://github.com/gechr/clover/releases/download/v#{version}/clover_darwin_arm64.tar.gz"
-      sha256 "22216d5e8b19ba6fb1fa3ac801d5ff2f50fc911eb05940d0fd41c4225b6304cc"
+      sha256 "9cc67711794c28bb304275c71356491e3c2fe17236cd06f67b1a23f53e906a5d"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/gechr/clover/releases/download/v#{version}/clover_linux_amd64.tar.gz"
-      sha256 "3bb085089b5a6751c2df2cffbdd97d3214db0ef07799c84bd25e42d35dc806fd"
+      sha256 "99be6eefb41106049eb22c95b51e6ae580665efb3911ce1e00102b48c4babf5c"
     end
     if Hardware::CPU.arm?
       url "https://github.com/gechr/clover/releases/download/v#{version}/clover_linux_arm64.tar.gz"
-      sha256 "f539e6753d985317726b19db0f905c45b0a2188083d4c9b55cd091b445d33dbc"
+      sha256 "c6340601f4dc7adf47ee958b719ef9646a0a87c2f1567a3b2041e9aff549f2fd"
     end
   end
 
