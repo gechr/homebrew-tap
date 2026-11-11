@@ -44,7 +44,6 @@ class EchoServer < Formula
     else
       bin.install "echo-server"
     end
-    generate_completions_from_executable(bin/"echo-server", "--print-completion", shell_parameter_format: "--@shell=")
   end
 
   test do
