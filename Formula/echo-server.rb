@@ -4,7 +4,7 @@
 class EchoServer < Formula
   desc "HTTP echo server that returns request details as JSON"
   homepage "https://github.com/gechr/echo-server"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   head do
@@ -15,22 +15,22 @@ class EchoServer < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/gechr/echo-server/releases/download/v#{version}/echo-server_darwin_amd64.tar.gz"
-      sha256 "b88f80ee9c29bda0dc2b84fb66bb192ca194cf9c31eefecb721a14f13a5d2d5c"
+      sha256 "4827d5f403b01201ae4be0fe92a630832004d3e83e1ce3199fc13c408bbdab75"
     end
     if Hardware::CPU.arm?
       url "https://github.com/gechr/echo-server/releases/download/v#{version}/echo-server_darwin_arm64.tar.gz"
-      sha256 "87796840b1da0dbfb19224c007d574630d4f91f4b269b42c3a4cf042e89f7f79"
+      sha256 "255c0cdde030e191fdc3d7d22466f508eb4ed61937aff459fcc35a6186daf8a9"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/gechr/echo-server/releases/download/v#{version}/echo-server_linux_amd64.tar.gz"
-      sha256 "88ecba1dff1a79fa25054ecddcef1ae0160bfe80fb07b24b71b07e19cda83007"
+      sha256 "6b3f2675d0d70b6e1840aa729b228ecc7948eedfb39a28d88c1e75a40055d6c7"
     end
     if Hardware::CPU.arm?
       url "https://github.com/gechr/echo-server/releases/download/v#{version}/echo-server_linux_arm64.tar.gz"
-      sha256 "e66a981db5436f50fb5cc95d804b8cf3dcb2eb4a3a1ec7dd3acaff23aa80ba5a"
+      sha256 "f4ccd4261c0aa8b3f339994a417eedfbad6e4a127bf9b40f31b6bac700ea0e85"
     end
   end
 
